@@ -1,0 +1,67 @@
+<!--
+Author: Graeme Jeffreys 
+S#: 100908108
+Title: Assignment 1- Calculator
+Version: 1.0
+Date: 2024-02-15
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--import css stylesheet-->
+    <link rel="stylesheet" href="css/css.css">
+
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <h1>Assignment 1 : Simple Calculator</h1>
+    <!-- Create a form to display the output, number buttons, and the operation buttons -->
+    <form id="calculator" oninput="result.value=updateDisplay()">
+        <!--Input line-->
+        <input type="text" id="result" readonly>
+
+        <!--First Row-->
+<button type="button" onclick="appendInput('(')">(</button>
+<button type="button" onclick="appendInput(')')">)</button>
+<button type="button" class="clear" onclick="clearInput()">C/CE</button>
+<button type="button" class="operator" onclick="appendInput('%')">%</button>
+
+<!--Second Row-->
+<button type="button" onclick="appendInput('7')">7</button>
+<button type="button" onclick="appendInput('8')">8</button>
+<button type="button" onclick="appendInput('9')">9</button>
+<button type="button" class="operator" onclick="appendInput('*')">X</button>
+
+<!--Third Row-->
+<button type="button" onclick="appendInput('4')">4</button>
+<button type="button" onclick="appendInput('5')">5</button>
+<button type="button" onclick="appendInput('6')">6</button>
+<button type="button" class="operator" onclick="appendInput('-')">-</button>
+
+<!--Fourth Row-->
+<button type="button" onclick="appendInput('1')">1</button>
+<button type="button" onclick="appendInput('2')">2</button>
+<button type="button" onclick="appendInput('3')">3</button>
+<button type="button" class="operator" onclick="appendInput('+')">+</button>
+
+<!--Fifth Row-->
+<button type="button" onclick="appendInput('0')">0</button>
+<button type="button" onclick="appendInput('.')">.</button>
+<button type="button" class="operator" onclick="appendInput('/')">/</button>
+<button type="button" class="equal" onclick="calculateResult()">=</button>
+
+    </form>
+
+    <script src="js/calculate.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+/*
+CSS for assignment 1
+Author: Graeme Jeffreys
+Student #: 100908108
+Date: 2024-02-23
+Version: 1.0.0
+Description: A basic CSS designed for a simple calculator
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 50px;
+}
+
+form {
+    width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button {
+    width: 22%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+button.operator {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+button.equal {
+    background-color:aqua;
+}
+
+button.clear {
+    background-color: #f44336;
+    color: #fff;
+}
