@@ -1,5 +1,5 @@
 //Author: Graeme Jeffreys
-//Student #: 100908108
+
 //Date: 2024-02-15
 //Version: 1.0.0
 //Description: calculate.js performs 
